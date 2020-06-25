@@ -1,4 +1,3 @@
-package Introduction;
 // Java Loops 2
 /*
     integers a, b, and n to create the following sereis:
