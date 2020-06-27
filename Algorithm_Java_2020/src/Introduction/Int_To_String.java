@@ -19,7 +19,7 @@ public class Int_To_String {
 			// String s=???; Complete this line below
 
 			// Write your code here
-//	   String s = String.valueOf(n);
+//			   String s = String.valueOf(n);
 			String s = Integer.toString(n);
 
 			if (n == Integer.parseInt(s)) {
