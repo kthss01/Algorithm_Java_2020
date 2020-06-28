@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Int_To_String {
 	public static void main(String[] args) {
 
-		DoNotTerminate.forbidExit();
+		DoNotTerminateClass.forbidExit();
 
 		try {
 			Scanner in = new Scanner(System.in);
@@ -27,14 +27,14 @@ public class Int_To_String {
 			} else {
 				System.out.println("Wrong answer.");
 			}
-		} catch (DoNotTerminate.ExitTrappedException e) {
+		} catch (DoNotTerminateClass.ExitTrappedException e) {
 			System.out.println("Unsuccessful Termination!!");
 		}
 	}
 }
 
 // The following class will prevent you from terminating the code using exit(0)!
-class DoNotTerminate {
+class DoNotTerminateClass {
 
 	public static class ExitTrappedException extends SecurityException {
 
