@@ -1,10 +1,10 @@
-package Introduction;
+package introduction;
 
 import java.util.Scanner;
 import java.util.Calendar;
 
 /**
- * @author Kay Calendar class ÀÌ¿ëÇØ¼­ ³¯Â¥ ¹Þ¾ÒÀ» ¶§ ¿äÀÏ ¹ÝÈ¯ÇÏ±â
+ * @author Kay Calendar class ï¿½Ì¿ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½Â¥ ï¿½Þ¾ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ï±ï¿½
  * 
  *         Input MM DD YYYY 2000 < year < 3000 correct day in capital letters
  * 
@@ -15,10 +15,10 @@ import java.util.Calendar;
 class Result {
 	public static String findDay(int month, int day, int year) {
 
-		Calendar cal = Calendar.getInstance(); // ÇöÀç ³¯¾¾¿Í ½Ã°£ÀÇ °´Ã¼¸¦ ¾ò¾î¿Ã ¼ö ÀÖÀ½
-		cal.set(year, month - 1, day); // month´Â 0 ~ 11ÀÌ 1 ~ 12¿ùÀÓ
+		Calendar cal = Calendar.getInstance(); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		cal.set(year, month - 1, day); // monthï¿½ï¿½ 0 ~ 11ï¿½ï¿½ 1 ~ 12ï¿½ï¿½ï¿½ï¿½
 
-		switch (cal.get(Calendar.DAY_OF_WEEK)) { // ¿äÀÏ ÀÇ¹Ì
+		switch (cal.get(Calendar.DAY_OF_WEEK)) { // ï¿½ï¿½ï¿½ï¿½ ï¿½Ç¹ï¿½
 		case 1:
 			return "SUNDAY";
 		case 2:

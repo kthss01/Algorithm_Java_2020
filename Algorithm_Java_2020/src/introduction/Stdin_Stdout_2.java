@@ -1,4 +1,4 @@
-package Introduction;
+package introduction;
 
 
 import java.util.Scanner;
@@ -45,8 +45,8 @@ public class Stdin_Stdout_2 {
 		 * the remainder of the integer line (which is empty)
 		 * 
 		 */
-		// ¹Ù·Î ¾²´Ï ¹®Á¦ »ý±è
-		scan.nextLine(); // ÀÌ·¸°Ô ÇØ°áÇÏ¸é µÇ´Â µí
+		// ï¿½Ù·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		scan.nextLine(); // ï¿½Ì·ï¿½ï¿½ï¿½ ï¿½Ø°ï¿½ï¿½Ï¸ï¿½ ï¿½Ç´ï¿½ ï¿½ï¿½
 		String s = scan.nextLine();
 		
 		System.out.println("String: " + s);

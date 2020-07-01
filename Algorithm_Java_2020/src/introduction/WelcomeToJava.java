@@ -1,9 +1,9 @@
-package Introduction;
+package introduction;
 
 
 /**
  * @author Kay
- * ¾ð¾î Ã³À½ ½ÃÀÛÇÏ¸é Ç×»ó ÇØº¸´Â°Å
+ * ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½×»ï¿½ ï¿½Øºï¿½ï¿½Â°ï¿½
  */
 public class WelcomeToJava {
 

@@ -1,4 +1,4 @@
-package Introduction;
+package introduction;
 
 
 import java.util.Scanner;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * @author Kay
  * conditional statements 
- * ½¬¿î°Ç ±×³É °¡º±°Ô ³Ñ¾î°¡ÀÚ
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×³ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¾î°¡ï¿½ï¿½
  */
 public class If_Else {
 

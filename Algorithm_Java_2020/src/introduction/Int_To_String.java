@@ -1,4 +1,4 @@
-package Introduction;
+package introduction;
 
 import java.security.Permission;
 import java.util.Scanner;

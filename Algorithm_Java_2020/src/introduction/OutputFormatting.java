@@ -1,4 +1,4 @@
-package Introduction;
+package introduction;
 
 
 import java.util.Scanner;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * @author Kay
  * Output Formatting
- * printf ¸»ÇÏ´Âµí
+ * printf ï¿½ï¿½ï¿½Ï´Âµï¿½
  * 
  * System.out.printf
  * 

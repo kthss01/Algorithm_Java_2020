@@ -1,12 +1,12 @@
-package Introduction;
+package introduction;
 import java.util.Scanner;
 
 /**
- * @author Kay Static initialization blocks (Á¤Àû ÃÊ±âÈ­ ºí·°) are executed when the
+ * @author Kay Static initialization blocks (ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½ï¿½) are executed when the
  *         class is loaded, and you can initialize static variables in those
  *         blocks.
  * 
- *         parallelogram ÆòÇà »çº¯Çü
+ *         parallelogram ï¿½ï¿½ï¿½ï¿½ ï¿½çº¯ï¿½ï¿½
  * 
  *         Task area of a parallelogram with breadth B and height H if B <= 0 or
  *         H <= 0 output shoudle be "java.lang.Exception: breadth and height

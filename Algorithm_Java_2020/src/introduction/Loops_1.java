@@ -1,4 +1,4 @@
-package Introduction;
+package introduction;
 // Java Loops 1
 /*
     Task

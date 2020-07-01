@@ -1,4 +1,4 @@
-package Introduction;
+package introduction;
 
 
 import java.util.Scanner;
@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @author Kay
  * Java Stdin and Stdout 1
  * 
- * Scanner class ÀÌ¿ëÇØ¼­ ÇÔ
+ * Scanner class ï¿½Ì¿ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½
  * 
  * Scanner scanner = new Scanner(System.in);
  * String myString = scanner.next();

@@ -1,4 +1,4 @@
-package Introduction;
+package introduction;
 
 // Java Datatypes
 
@@ -22,10 +22,10 @@ package Introduction;
     
     If there is more than one appropriate data type, print each one on its own line and order them by size 
         (byte < short < int < long)
-    if the number cannot be stored in one of the four aforementioned(¾Õ¼­ ¸»ÇÑ) primitives, print the line:
+    if the number cannot be stored in one of the four aforementioned(ï¿½Õ¼ï¿½ ï¿½ï¿½ï¿½ï¿½) primitives, print the line:
         n can't be fitted anywhere.
     
-    long long - BigInteger ÀÌ¿ë
+    long long - BigInteger ï¿½Ì¿ï¿½
         https://www.acmicpc.net/blog/view/3
     BigIntegers compare
         https://riptutorial.com/ko/java/example/4918/bigintegers-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0
