@@ -64,23 +64,31 @@ class Main {
 	// 재귀 호출
 	public static void draw(int rc, int len) {
 		if (len == 1) {
+			// 가운데 점
 			star[rc][rc] = '*';
 			return;
 		}
 
 		for (int i = 0; i < len; i++) {
+			// 위쪽
 			star[rc][rc + i] = '*';
+			// 아래쪽
 			star[rc + len - 1][rc + i] = '*';
+			// 왼쪽 
 			star[rc + i][rc] = '*';
+			// 오른쪽
 			star[rc + i][rc + len - 1] = '*';
 		}
+		// 빈칸은 같은 패턴인데 한줄만 밀고
 		rc++;
+		// len - 2 로해서 2칸 짧게
 		for (int i = 0; i < len - 2; i++) {
 			star[rc][rc + i] = ' ';
 			star[rc + len - 3][rc + i] = ' ';
 			star[rc + i][rc] = ' ';
 			star[rc + i][rc + len - 3] = ' ';
 		}
+		// 재귀로 안쪽 그리기
 		draw(rc + 1, len - 4);
 	}
 
