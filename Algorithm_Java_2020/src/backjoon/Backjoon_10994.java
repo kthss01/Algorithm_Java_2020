@@ -57,59 +57,59 @@ import java.util.Scanner;
  * 잘하는 사람은 재귀호출로 구현함
  */
 
-class Main {
-	static int n, Len;
-	static char[][] star;
-
-	// 재귀 호출
-	public static void draw(int rc, int len) {
-		if (len == 1) {
-			// 가운데 점
-			star[rc][rc] = '*';
-			return;
-		}
-
-		for (int i = 0; i < len; i++) {
-			// 위쪽
-			star[rc][rc + i] = '*';
-			// 아래쪽
-			star[rc + len - 1][rc + i] = '*';
-			// 왼쪽 
-			star[rc + i][rc] = '*';
-			// 오른쪽
-			star[rc + i][rc + len - 1] = '*';
-		}
-		// 빈칸은 같은 패턴인데 한줄만 밀고
-		rc++;
-		// len - 2 로해서 2칸 짧게
-		for (int i = 0; i < len - 2; i++) {
-			star[rc][rc + i] = ' ';
-			star[rc + len - 3][rc + i] = ' ';
-			star[rc + i][rc] = ' ';
-			star[rc + i][rc + len - 3] = ' ';
-		}
-		// 재귀로 안쪽 그리기
-		draw(rc + 1, len - 4);
-	}
-
-	public static void print() {
-		StringBuffer buffer = new StringBuffer();
-		for (int i = 0; i < Len; i++)
-			buffer.append(star[i], 0, Len).append('\n');
-		System.out.print(buffer);
-	}
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		n = sc.nextInt();
-		Len = (n << 2) - 3; // 4 * n - 3
-		star = new char[Len][Len];
-		sc.close();
-
-		draw(0, Len);
-		print();
-	}
-}
+//class Main {
+//	static int n, Len;
+//	static char[][] star;
+//
+//	// 재귀 호출
+//	public static void draw(int rc, int len) {
+//		if (len == 1) {
+//			// 가운데 점
+//			star[rc][rc] = '*';
+//			return;
+//		}
+//
+//		for (int i = 0; i < len; i++) {
+//			// 위쪽
+//			star[rc][rc + i] = '*';
+//			// 아래쪽
+//			star[rc + len - 1][rc + i] = '*';
+//			// 왼쪽 
+//			star[rc + i][rc] = '*';
+//			// 오른쪽
+//			star[rc + i][rc + len - 1] = '*';
+//		}
+//		// 빈칸은 같은 패턴인데 한줄만 밀고
+//		rc++;
+//		// len - 2 로해서 2칸 짧게
+//		for (int i = 0; i < len - 2; i++) {
+//			star[rc][rc + i] = ' ';
+//			star[rc + len - 3][rc + i] = ' ';
+//			star[rc + i][rc] = ' ';
+//			star[rc + i][rc + len - 3] = ' ';
+//		}
+//		// 재귀로 안쪽 그리기
+//		draw(rc + 1, len - 4);
+//	}
+//
+//	public static void print() {
+//		StringBuffer buffer = new StringBuffer();
+//		for (int i = 0; i < Len; i++)
+//			buffer.append(star[i], 0, Len).append('\n');
+//		System.out.print(buffer);
+//	}
+//
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		n = sc.nextInt();
+//		Len = (n << 2) - 3; // 4 * n - 3
+//		star = new char[Len][Len];
+//		sc.close();
+//
+//		draw(0, Len);
+//		print();
+//	}
+//}
 
 public class Backjoon_10994 {
 

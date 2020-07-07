@@ -26,8 +26,22 @@ import java.util.Scanner;
  */
 
 /*
- * 나중에 잘한 사람꺼 코드 보고 이해하자 학원에서는 별찍기 - 19 이해만
+ * 잘한 사람꺼 코드 willook 이분꺼 보고있는 중
  */
+
+class Main {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int k = sc.nextInt();
+		sc.close();
+		
+		int n = 2 * k - 1;
+		int m = 4 * k - 3;
+		
+		char[][] map = new char[n][m];
+	} 
+}
 
 public class Baekjoon_13015 {
 
