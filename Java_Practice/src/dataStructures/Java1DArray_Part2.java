@@ -40,21 +40,22 @@ import java.util.Scanner;
  * 이거 greedy 알고리즘인거 같은 느낌이 듬 쉬운 문제는 아님
  * -> 재귀 호출로 구현해야할 것 같음
  * 갓던데 또 못가게해야함 대충 구현해보니 stack 터짐 
- * 풀이 보니 이게 DFS (재귀호출)임 오랜만에 복습한셈 치자
  */
 
 public class Java1DArray_Part2 {
 
 	public static boolean canWin(int index, int leap, int[] game) {
-		if (index < 0 || game[index] == 1)
-			return false;
-		if (index == game.length - 1 || index + leap > game.length - 1)
+		if (index + leap >= game.length)
 			return true;
 
-		game[index] = 1;
-		return canWin(index - 1, leap, game) 
-				|| canWin(index + 1, leap, game) 
-				|| canWin(index + leap, leap, game);
+		if (index - 1 >= 0 && game[index + 1] == 0)
+			canWin(index - 1, leap, game);
+		if (index + 1 < game.length && game[index + 1] == 0)
+			canWin(index + 1, leap, game);
+		if (game[index + leap] == 0)
+			canWin(index + leap, leap, game);
+
+		return false;
 	}
 
 	public static void main(String[] args) {
