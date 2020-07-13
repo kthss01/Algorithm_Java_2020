@@ -3,6 +3,8 @@ package dataStructures;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Comparator;
+import java.util.PriorityQueue;
 
 /*
  * In computer science, a priority queue is an abstract data type 
@@ -64,8 +66,58 @@ class Student2 {
 	}
 }
 
-class Priorities {
+class StudentComparator implements Comparator<Student2> {
 
+	@Override
+	public int compare(Student2 o1, Student2 o2) {
+		if (o1.getCgpa() == o2.getCgpa()) {
+			if (o1.getName().equals(o2.getName())) {
+				// 오름차순
+				return Integer.compare(o1.getId(), o2.getId());
+			}
+			// 알파벳순
+			return o1.getName().compareTo(o2.getName());
+		} else {
+			// 내림차순
+			return Double.compare(o2.getCgpa(), o1.getCgpa());
+		}
+	}
+
+}
+
+class Priorities {
+	public List<Student2> getStudents(List<String> events) {
+		
+//		PriorityQueue<Student2> pq = new PriorityQueue<Student2>(events.size(), new StudentComparator());
+		// 방법2
+		PriorityQueue<Student2> pq = new PriorityQueue<>(
+				Comparator.comparing(Student2::getCgpa).reversed()
+				.thenComparing(Student2::getName)
+				.thenComparing(Student2::getId));
+		
+		for (String event : events) {
+			String parts[] = event.split(" ");
+			
+			if(parts[0].equals("ENTER")) {
+				Student2 stu = new Student2(
+						Integer.parseInt(parts[3]), 
+						parts[1], 
+						Double.parseDouble(parts[2]));
+				pq.add(stu);
+			} else {
+				if(!pq.isEmpty()) {
+					pq.poll();
+				}
+			}
+		}
+		
+		List<Student2> students = new ArrayList<>();
+		while(!pq.isEmpty()) {
+			students.add(pq.poll());
+		}
+		
+		return students;
+	}
 }
 
 public class JavaPriorityQueue {
