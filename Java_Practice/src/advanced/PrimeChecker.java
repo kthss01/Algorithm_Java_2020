@@ -6,9 +6,7 @@ import static java.lang.System.in;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.lang.reflect.Method;
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -24,9 +22,7 @@ import java.util.Set;
 
 class Prime {
 	public void checkPrime(int... nums) {
-		int[] primes = { 2, 3, 5, 7 };
-
-		Set<Integer> set = new HashSet<>();
+		List<Integer> list = new ArrayList<>();
 		for (int n : nums) {
 			if (n == 1)
 				continue;
@@ -38,16 +34,10 @@ class Prime {
 				}
 			}
 			if (isPrime == true)
-				set.add(n);
+				list.add(n);
 		}
 
-//		List<Integer> list = new ArrayList<>(set);
-//		Collections.sort(list);
-//
-//		for (Integer integer : list) {
-//			System.out.print(integer + " ");
-//		}
-		for (Integer integer : set) {
+		for (Integer integer : list) {
 			System.out.print(integer + " ");
 		}
 		System.out.println();
