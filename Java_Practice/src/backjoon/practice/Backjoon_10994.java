@@ -1,4 +1,4 @@
-package backjoon;
+package backjoon.practice;
 
 import java.util.Scanner;
 
