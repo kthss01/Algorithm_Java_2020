@@ -1,4 +1,4 @@
-package backjoon.practice.kingchobo;
+package baekjoon.practice.kingchobo;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,7 +17,7 @@ import java.io.InputStreamReader;
  * 안되면 가장 참여도가 낮은 대학의 영문 이름의 첫 단어 출력
  */
 
-public class Backjoon_17388 {
+public class Baekjoon_17388 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

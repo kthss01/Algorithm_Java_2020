@@ -1,4 +1,4 @@
-package backjoon.practice;
+package baekjoon.practice;
 
 import java.util.Scanner;
 
@@ -111,7 +111,7 @@ import java.util.Scanner;
 //	}
 //}
 
-public class Backjoon_10994 {
+public class Baekjoon_10994 {
 
 	public static void createStar(int n) {
 		int m = 4 * (n - 1) + 1;

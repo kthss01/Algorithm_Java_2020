@@ -1,4 +1,4 @@
-package backjoon.practice.chobo2;
+package baekjoon.practice.chobo2;
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ import java.util.Scanner;
  * 
  */
 
-public class Backjoon_9317 {
+public class Baekjoon_9317 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

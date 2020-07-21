@@ -1,4 +1,4 @@
-package backjoon.algorithm;
+package baekjoon.algorithm;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package backjoon.practice.kingchobo;
+package baekjoon.practice.kingchobo;
 
 import java.util.Scanner;
 
@@ -21,7 +21,7 @@ import java.util.Scanner;
  * 플레이어가 게임에서 이길 확률을 최대화하는 카드의 값을 나타내는 정수로 한 줄을 생성
  */
 
-public class Backjoon_13597 {
+public class Baekjoon_13597 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

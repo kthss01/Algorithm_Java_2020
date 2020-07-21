@@ -1,4 +1,4 @@
-package backjoon.practice.chobo2;
+package baekjoon.practice.chobo2;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -64,7 +64,7 @@ class Pair {
  * T 맞음 N 틀림 P 스킵 맞으면 왼쪽에 있는 플레이어에게 넘어감 (-1) N or P 다음 문제
  */
 
-public class Backjoon_9517 {
+public class Baekjoon_9517 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

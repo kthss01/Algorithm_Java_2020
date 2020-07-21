@@ -1,4 +1,4 @@
-package backjoon.practice.kingchobo;
+package baekjoon.practice.kingchobo;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -23,7 +23,7 @@ import java.io.InputStreamReader;
  * 전체표는 100,000를 넘지 않음
  */
 
-public class Backjoon_17530 {
+public class Baekjoon_17530 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

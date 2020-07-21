@@ -1,4 +1,4 @@
-package backjoon.practice.kingchobo;
+package baekjoon.practice.kingchobo;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ import java.util.Scanner;
  * 채울 수 있는 타일의 개수 최댓값 출력
  */
 
-public class Backjoon_15700 {
+public class Baekjoon_15700 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

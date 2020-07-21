@@ -1,4 +1,4 @@
-package backjoon.practice.kingchobo;
+package baekjoon.practice.kingchobo;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ import java.util.Scanner;
  * 7 digit (1000000 <= N <= 9999999) 받을 때 앞자리가 555면 YES 아니면 NO
  */
 
-public class Backjoon_17863 {
+public class Baekjoon_17863 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

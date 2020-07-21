@@ -1,4 +1,4 @@
-package backjoon.practice.kingchobo;
+package baekjoon.practice.kingchobo;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ import java.util.Scanner;
  * 2541 - 1998 = 543 
  */
 
-public class Backjoon_18108 {
+public class Baekjoon_18108 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
