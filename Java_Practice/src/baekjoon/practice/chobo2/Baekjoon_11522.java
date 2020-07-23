@@ -3,6 +3,7 @@ package baekjoon.practice.chobo2;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 /*
  * Sum Kind of Problem
@@ -17,6 +18,10 @@ import java.io.InputStreamReader;
  * N (1 <= N <= 10000) number
  * 
  * data set number s1 s2 s3 출력
+ * 
+ * 수의 합 (n*(n+1)) / 2
+ * 홀수의 합 n^2
+ * 짝수의 합 n^2 + n
  */
 
 public class Baekjoon_11522 {
@@ -24,10 +29,21 @@ public class Baekjoon_11522 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int p = Integer.parseInt(br.readLine());
-		
-		for(int i=0;i<p;i++) {
-			
+		StringBuilder sb = new StringBuilder();
+
+		for (int i = 0; i < p; i++) {
+			StringTokenizer token = new StringTokenizer(br.readLine());
+			String k = token.nextToken();
+			int n = Integer.parseInt(token.nextToken());
+
+//			sb.append(String.format("%d %d %d %d\n", 
+//					i + 1, (n * (n + 1)) / 2, n * n, n * n + n));
+			sb.append(k + " " + 
+					((n * (n + 1)) / 2) + " " + 
+					(n * n) + " " + (n * n + n) + "\n");
 		}
+
+		System.out.println(sb);
 	}
 
 }
