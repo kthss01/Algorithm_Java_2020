@@ -22,6 +22,8 @@ import java.util.Scanner;
  * 현재 방향이 올바른 방향이 되기위해 가장 빠른 거리 출력하기
  * 어디든 같으면 시계방향으로 회전
  * 	ex) 180 -180보다는 180으로 출력
+ * 
+ * 쉬운 문제인데 굉장히 헷갈리는 문제임
  */
 
 public class Baekjoon_13363 {
@@ -32,16 +34,50 @@ public class Baekjoon_13363 {
 		int cor = sc.nextInt();
 		sc.close();
 
-		if (cur > cor) {
-			if (cur - cor > cor + 360 - cur)
-				System.out.println(cor + 360 - cur);
-			else
-				System.out.println(cur - cor);
-		} else {
-			if (cor - cur < cur + 360 - cor)
-				System.out.println(cor - cur);
-			else
-				System.out.println(cor - (360 + cur));
-		}
+		/*
+		 * solution 찾아서 이거 보고 구현해봄
+		 */
+
+//		if (cor - cur > 180)
+//			System.out.println(cor - cur - 360);
+//		else if (cor - cur > -180)
+//			System.out.println(cor - cur);
+//		else
+//			System.out.println(cor - cur + 360);
+
+		// 더 좋은 풀이도 있음
+		int x = (cor - cur + 360) % 360; // 시계 방향
+		int y = (cur - cor + 360) % 360; // 반시계 방향
+		System.out.println(x > y ? -y : x);
+
+		// 했는데 틀린 거
+//		int clockwiseDir = 0;
+//		// 시계방향 회전
+//		if (cur < cor) {
+//			clockwiseDir = cor - cur;
+//		}
+//
+//		else {
+//			clockwiseDir = 360 - cur + cor;
+//		}
+//
+//		int counterClockwiseDir = 0;
+//		// 반시계방향 회전
+//		if (cur < cor) {
+//			counterClockwiseDir = -cur - (360 - cor);
+//		} else {
+//			counterClockwiseDir = cor - cur;
+//		}
+//		
+//		// test
+////		System.out.println(clockwiseDir);
+////		System.out.println(counterClockwiseDir);
+//
+//		if (clockwiseDir <= -counterClockwiseDir)
+//			System.out.println(clockwiseDir);
+////		else if(clockwiseDir == -counterClockwiseDir)
+////			System.out.println(Math.abs(clockwiseDir));
+//		else
+//			System.out.println(counterClockwiseDir);
 	}
 }
